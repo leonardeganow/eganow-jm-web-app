@@ -1,0 +1,163 @@
+syntax = "proto3";
+
+option csharp_namespace = "NDC_DONATION_2024.Protos";
+
+package Transaction;
+
+service TransactionSvc {
+	rpc PostDataToTransaction(PostDataRequest) returns (TransResponse);
+   // rpc PostDataToTransactionCard(CardDataRequest) returns (TransResponse);
+    rpc PostDataToTransactionUSSD(PostDataUssdRequest) returns (TransResponse);
+    rpc GetChargesOnTransaction(ChargesRequest) returns (ChargesResponse);
+    rpc GetChargesOnTransactionUssd(UssdChargesRequest) returns (ChargesResponse);
+    rpc GetCustomerKYC(KycRequest) returns (KycResponse);
+    rpc GetMemberTransactions(TransactionRequest) returns (TransactionResponse);
+    rpc GetMemberTransactionHistory(TransactionHistoryRequest) returns (TransactionResponse);
+    rpc GetMemberTransactionsForAdmin(TransAdminRequest) returns (TransactionResponse);
+    rpc GetTransactionStatus(StatusRequest) returns (StatusResponse);
+    rpc GetTotalAmountDonated(DonatedAmountRequest) returns (DontaedAmountResponse);
+    rpc GetCardTypeDetailsPerTransactionByMemberId(CardTypePerTransactionRequest) returns (CardTypePerTransactionResponse);
+    rpc GetTotalTransactionsDoneByAgent(TotalTransactionDoneByAgentRequest) returns (TotalTransactionDoneByAgentResponse);
+}
+
+
+
+message PostDataRequest {
+     string mobileNo = 1;
+     string memberId = 3;
+     string transTypeJMOrGCC= 4;
+     double transAmount = 5;
+     string paymentAcctOrMomoNo = 7; // USE FOR CARD NUMBER
+     string paymentAccountName = 8;
+     string networkId = 9;
+     string narration = 10;
+     string agentId = 11;
+     string CVV = 20;
+    int32 expiryDateMonth = 21; // example Jan, pass 1, Feb, pass 2 etc
+    int32 expiryDateYear = 22; 
+    string channel = 23;
+}
+
+message DonatedAmountRequest{
+    string memberType= 1; // jm or ggc
+    string memberId = 2;
+}
+
+message DontaedAmountResponse {
+    bool status = 1;
+    string message = 2;
+}
+
+message PostDataUssdRequest {
+    string mobileNumber = 1;
+    string cardTypeId = 2;
+    string networkId = 3;
+    string transAmount = 4; 
+    string narration = 5;
+    string transTypeJMOrGCC=6;
+    string agentId = 7;
+}
+
+message UssdChargesRequest {
+    double transAmount = 1;
+    string networkId = 2; // MTN |
+    string mobileNumber = 3;
+}
+
+ 
+
+
+
+message TransAdminRequest {
+    string transTypeJMOrGGC =1;
+    string startDate = 2; // dd-mm-yyyy
+    string endDate = 3;
+}
+
+message TransResponse {
+	bool status = 1;
+	string message = 2;
+    string threedsurl = 3;
+}
+
+message ChargesRequest {
+    double transAmount = 1;
+    string networkId = 2;
+    string mobileNumber = 3;
+}
+
+
+message ChargesResponse {
+    bool status = 1;
+    string message = 2;
+    double charges = 3;
+}
+
+message KycRequest {
+    string mobileNumber = 1;
+    string networkId = 2;
+}
+
+message KycResponse {
+    bool status = 1;
+    string message =2;
+}
+
+message TransactionRequest {
+    string memberId = 1;
+    string memberType = 2;
+    string startDate = 3; // dd-mm-yyyy
+    string endDate = 4;
+}
+
+message TransactionHistoryRequest {
+     string memberId = 1;
+    string memberType = 2;
+}
+
+message TransactionData { 
+    string transactionId =1;
+    string memberName = 2;
+    double amount =3;
+    string status = 4;
+    string type = 5;
+    string date = 6;
+    string paymentName = 7;
+    string paymentAccountNumberOrMomoNumber = 8;
+    string transStatus = 9;
+    string paymentMethod = 10;
+}
+
+message TransactionResponse {
+    repeated TransactionData transList =1;
+}
+
+message StatusRequest {
+    string transactionId = 1;
+}
+
+message StatusResponse {
+    bool status = 1;
+    string transStatus= 2;
+    string message = 3;
+}
+
+message CardTypePerTransactionRequest {
+    string memberId = 1;
+}
+
+
+message CardTypePerTransactionResponse {
+    string cardTypeId = 1;
+    string cardTypeDescription = 2;
+    string cardTypeName = 3;
+    double totalDonation = 4;
+}
+message TotalTransactionDoneByAgentRequest {
+    string agentId = 1;
+}
+
+message TotalTransactionDoneByAgentResponse {
+    double totalAmount = 1;
+    double totalCommission = 2;
+}

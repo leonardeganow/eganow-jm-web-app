@@ -55,7 +55,7 @@ const Features = (props) => {
                   <img src={ggc} alt="imag1" className="img-fluid" />
                 </div>
                 <h4 className="text-center text-danger mt-md-2">
-                  GET YOUR GOOD GOVERNANCE CARD
+                  DIAL *248*5# TO DONATE{" "}
                 </h4>
                 <p className="p-2 m-0 text-center">
                   The Good Governance Card is not just a card it's a key to a

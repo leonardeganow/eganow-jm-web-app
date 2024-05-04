@@ -37,7 +37,7 @@ const agentId = localStorage.getItem("agentid")
 
     try {
       const response = await postNewTransaction(newData);
-      // console.log(response);
+      console.log(response);
       setIsLoading(false);
       if (response.status === true) {
         props.formHandler.setValue("paymentUrl", response.threedsurl);

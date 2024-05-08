@@ -6,7 +6,7 @@ import Logo from "../../images/logo-s3.png";
 import { Link } from "react-scroll";
 import TransactionsModal from "../modals/TransactionsModal";
 import { useState } from "react";
-import { RiAdminFill } from "react-icons/ri";
+// import { RiAdminFill } from "react-icons/ri";
 
 const Header = (props) => {
   const [open, setOpen] = useState(false);

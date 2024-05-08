@@ -27,9 +27,9 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import TransactionAPI from "../../api/grpcapi/TransactionGRPC";
-import { Avatar, Skeleton } from "@mui/material";
-import { IoSearchCircleSharp } from "react-icons/io5";
-import { FaSearch, FaWindowClose } from "react-icons/fa";
+// import { Avatar, Skeleton } from "@mui/material";
+// import { IoSearchCircleSharp } from "react-icons/io5";
+import { FaWindowClose } from "react-icons/fa";
 import { jsPDF } from "jspdf";
 
 const TransactionsTwo = (props) => {
@@ -367,70 +367,11 @@ const TransactionsTwo = (props) => {
                 {/* <IoIosRefresh onClick={refreshData} /> */}
               </span>
             </h2>
-            <div className="col-md-6 text-center ">
-              {/* card */}
-              <div
-                id="divId"
-                style={{
-                  backgroundImage: `url(${memberCards(cardType)})`,
-                  backgroundSize: "cover",
-                  backgroundAttachment: "fixed",
-                  backgroundPosition: "center",
-                  height: "150px",
-                  width: "100%",
-                  position: "relative",
-                  borderRadius: "15px",
-                }}
-                className="rounded"
-              >
-                <p
-                  style={{
-                    position: "absolute",
-                    bottom: "15px",
-                    left: "35px",
-                    color: "white",
-                    fontSize: "13px",
-                    color: `${
-                      cardType === "AG050" || "AG011" || "AG006"
-                        ? "white"
-                        : "black"
-                    }`,
-                  }}
-                >
-                  {props.formHandler.getValues("fullName") ||
-                    props.formHandler.getValues("membername")}
-                </p>
-                <p
-                  style={{
-                    position: "absolute",
-                    top: "40%",
-                    left: "35px",
-                    color: "white",
-                    // letterSpacing: "1px",
-                    color: `${
-                      cardType === "AG050" || "AG011" || "AG006"
-                        ? "white"
-                        : "black"
-                    }`,
-                    fontSize: "14px",
-                  }}
-                >
-                  {props.formHandler.getValues("ndcCardNo")}
-                </p>
-                {/* <img  src={arise} alt="" /> */}
-                {/* <Skeleton
-                          variant="rectangular"
-                          width={"100%"}
-                          height={150}
-                        >
-                          <Avatar src="" className="w-25" />
-                        </Skeleton> */}
-              </div>
-            </div>
+           
 
             {/* search form */}
-            <div className="col-md-6 align-self-end">
-              <div>
+            <div className="d-flex justify-content-center">
+              <div className="w-75 ">
                 <form
                   // onSubmit={handleSubmit(onSubmitTransaction)}
                   className="mt-3"
@@ -438,7 +379,7 @@ const TransactionsTwo = (props) => {
                 >
                   {/* forms cards */}
                   <div className="row">
-                    <div className="col-12 col-md-12">
+                    <div className="col-12 col-md-12 ">
                       <div>
                         <label htmlFor="">Start Date</label> <br />
                         <input
@@ -491,8 +432,8 @@ const TransactionsTwo = (props) => {
             </div>
             {/* end of search form */}
           </div>
-          <div className="row gy-2 my-3 align-items-center">
-            <div className="col-12  col-md-4">
+          <div className="row gy-2 my-3 ">
+            <div className=" d-flex  justify-content-center">
               <button
                 onClick={() => {
                   props.formHandler.setValue("amount", "");
@@ -500,27 +441,27 @@ const TransactionsTwo = (props) => {
                   props.formHandler.setValue("paymentMethodId", "");
                   props.handleBack(4);
                 }}
-                className="btn btn-danger w-100"
+                className="btn btn-danger w-75"
               >
-                Top Up
+               Donate
               </button>
             </div>
-            <div className="col-12 col-md-4">
+            {/* <div className="col-12 col-md-4">
               <button
                 onClick={handleDownload}
                 className="btn btn-success w-100"
               >
                 Download card
               </button>
-            </div>
-            <div className="col-12 col-md-4 mt-2 mt-md-0">
+            </div> */}
+            {/* <div className="col-12 col-md-4 mt-2 mt-md-0">
               <button
                 onClick={downloadHistory}
                 className="btn btn-success w-100"
               >
                 Download to pdf
               </button>
-            </div>
+            </div> */}
           </div>
           {/*  */}
           {/* SELECT START AND END DATES */}

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import TransactionAPI from "../../api/grpcapi/TransactionGRPC";
 import { toast } from "react-toastify";
@@ -6,7 +6,7 @@ import useStore from "../../formstore/formStore";
 
 const ReviewPaymentPage = (props) => {
   const [isLoading, setIsLoading] = useState(false);
-  const { postNewTransaction, getKyc } = TransactionAPI();
+  const { postNewTransaction } = TransactionAPI();
   const { info } = useStore();
 
   const creditCardNo = props.formHandler.getValues("paymentCardNo");
@@ -37,7 +37,7 @@ const agentId = localStorage.getItem("agentid")
 
     try {
       const response = await postNewTransaction(newData);
-      console.log(response);
+      // console.log(response);
       setIsLoading(false);
       if (response.status === true) {
         props.formHandler.setValue("paymentUrl", response.threedsurl);

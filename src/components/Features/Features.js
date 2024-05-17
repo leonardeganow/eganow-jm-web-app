@@ -17,10 +17,10 @@ const ClickHandler = () => {
 const Features = (props) => {
   return (
     <section
-      className={`wpo-election-donation-section-s2 section-padding ${props.fClass}`}
+      className={`wpo-election section-padding ${props.fClass}`}
     >
-      <div className="container py-md-4 py-2">
-        <div className="row p-6 g-lg-5 g-md-3 align-items-stretch ">
+      <div className="container py-md-4 ">
+        <div className="row p-6 g-lg-5 g-md-3 align-items-stretch g-5">
           <div className="col-md-4  ">
             <div className="wpo-service-item shadow rounded-3 h-100">
               <div className="wpo-service-text p-2">
@@ -44,7 +44,7 @@ const Features = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4  ">
             <div className="wpo-service-item shadow rounded-3 h-100">
               <div className="wpo-service-text p-2">
                 <div className="service-icon overflow-hidden rounded-3">

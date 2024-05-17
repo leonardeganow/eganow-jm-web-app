@@ -67,7 +67,7 @@ const Header = (props) => {
                   </button>
                   <ul className="nav navbar-nav mb-2 mb-lg-0">
                     <li className="menu-item-has-children">
-                      <MyLink onClick={ClickHandler} to="/">
+                      <MyLink onClick={ClickHandler} to="https://www.johnmahama.org/" target={'_blank'}>
                         Home
                       </MyLink>
                       {/* <ul className="sub-menu">
@@ -105,9 +105,9 @@ const Header = (props) => {
                         Donate to JM{" "}
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <MyLink to="/about">About</MyLink>
-                    </li>
+                    </li> */}
                     {/* // style={{ margin: "0px", height: "5px", padding: 0 }} */}
 
                     {/* > */}

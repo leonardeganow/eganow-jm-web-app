@@ -76,7 +76,7 @@ const CampaignSection = (props) => {
   return (
     <section
       id="donate"
-      className="wpo-running-campaign-section section-padding"
+      className="wpo-running-campaign-section section-padding  m-0"
     >
       <div className="container">
         <div className="running-campaign-wrap">

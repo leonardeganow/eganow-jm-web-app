@@ -8,7 +8,7 @@ import ggc from "../../images/shortcode.png";
 // import follow from "../../images/portfolio/jm1.jpg";
 import { Link } from "react-scroll";
 import { Link as MyLink } from "react-router-dom";
-import follow from "../../images/marketwomen.jpg";
+import follow from "../../images/jnplus.jpg";
 
 const ClickHandler = () => {
   window.scrollTo(10, 0);
@@ -16,9 +16,7 @@ const ClickHandler = () => {
 
 const Features = (props) => {
   return (
-    <section
-      className={`wpo-election section-padding ${props.fClass}`}
-    >
+    <section className={`wpo-election section-padding ${props.fClass}`}>
       <div className="container py-md-4 ">
         <div className="row p-6 g-lg-5 g-md-3 align-items-stretch g-5">
           <div className="col-md-4  ">
@@ -37,7 +35,7 @@ const Features = (props) => {
                 <div className="text-center p-2 m-0">
                   <Link to="donate" smooth={true} duration={500}>
                     <button type="button" className="btn btn-success">
-                      Click To Donate
+                      Donate now
                     </button>
                   </Link>
                 </div>
@@ -60,7 +58,7 @@ const Features = (props) => {
                 <div className="text-center p-2 m-0">
                   <Link to="donate" smooth={true} duration={500}>
                     <button type="button" className="btn btn-success">
-                      Click To Get Card
+                      Donate now
                     </button>
                   </Link>
                 </div>
@@ -81,14 +79,11 @@ const Features = (props) => {
                   Lets join hands together and donate towards victory 2024
                 </p>
                 <div className="text-center p-2 m-0">
-                  <MyLink
-                    to="https://x.com/OfficialNDCGh?s=20"
-                    target={"_blank"}
-                  >
-                    <button type="button" className="btn btn-success mt-4">
-                      Follow Us
+                  <Link to="donate" smooth={true} duration={500}>
+                    <button type="button" className="btn btn-success">
+                      Donate now
                     </button>
-                  </MyLink>
+                  </Link>
                 </div>
               </div>
             </div>

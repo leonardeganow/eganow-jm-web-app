@@ -93,7 +93,7 @@ const Footer = (props) => {
               </div>
             </div>
             <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
-              <div className="widget link-widget">
+              {/* <div className="widget link-widget">
                 <div className="widget-title">
                   <h3>quick links:</h3>
                 </div>
@@ -119,7 +119,7 @@ const Footer = (props) => {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
             <div className="col col-lg-4 col-md-6 col-sm-12 col-12">
               <div className="widget wpo-service-link-widget">
@@ -129,18 +129,16 @@ const Footer = (props) => {
                 <div className="contact-ft">
                   <ul>
                     <li>
-                      <i className="fi ti-location-pin"></i>641/4 Ringway Close,
-                      Kokomlemle,
-                      <br /> P. O. Box 5825, Accra- North
+                      <i className="fi ti-location-pin"></i>Cantonment - Accra
+                      <br /> P. O. Box CT 1763
                     </li>
                     <li>
                       <i className="fi flaticon-phone-call-1"></i>+233 (30)
                       2223195
-                      {/* <br />+ 8 (123) 123 456 789 */}
                     </li>
                     <li>
                       <i className="fa fa-envelope-o" aria-hidden="true"></i>
-                      info@ndcgh.org
+                      office@johnmahama.org
                     </li>
                   </ul>
                 </div>

@@ -16,8 +16,8 @@ localStorage.clear()
     <Fragment>
       <Navbar hclass={"wpo-header-style-4"} />
       <Hero />
-      <CampaignSection />
       <Features />
+      <CampaignSection />
       <Footer />
       <Scrollbar />
     </Fragment>

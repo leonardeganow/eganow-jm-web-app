@@ -269,14 +269,14 @@ const MobileMenu = () => {
             <li className="active text-white  text-center my-3">Donate to JM</li>
           </Link>
 
-          <MyLink
+          {/* <MyLink
             to="/about"
             smooth={true}
             duration={500}
             onClick={() => setMenuState(!menuActive)}
           >
             <li className="active text-white  text-center my-3 ">About</li>
-          </MyLink>
+          </MyLink> */}
           {/* <MyLink
             to="/agentlogin"
             smooth={true}

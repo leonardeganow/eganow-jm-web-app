@@ -77,7 +77,7 @@ const membersGRPC = () => {
     try {
       const request = new JMRequest(); //initialize a new member request
       // setting request body values
-      request.setMobilenumberoremailaddress(params.telephoneNo ? params.telephone : params.email);
+      request.setMobilenumberoremailaddress(params.telephoneNo ? params.telephoneNo : params.email);
 
       request.setPin(params.pin);
 

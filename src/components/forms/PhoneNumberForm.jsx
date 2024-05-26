@@ -340,8 +340,7 @@ function PhoneNumberForm(props) {
             <h3 className="text-center">Phone Number</h3>
             <p className="text-center">
               {/* "Create pin to protect the card you will acquire" */}
-              Enter your phone number to view your good governance card or
-              register
+              Enter your phone number to donate
             </p>
             <div className="text-center ">
               <div
@@ -359,7 +358,7 @@ function PhoneNumberForm(props) {
                   <input
                     // style={{ width: "100%" }}
                     {...props.formHandler.register("telephoneNo")}
-                    placeholder="Telephone Number"
+                    placeholder="0244000000"
                     className={`form-control w-100 ${
                       props.formHandler.formState.errors.telephoneNo
                         ? "is-invalid"
@@ -433,8 +432,7 @@ function PhoneNumberForm(props) {
           <form>
             <h3 className="text-center">Email</h3>
             <p className="text-center">
-              Enter your email below to view your good governance card or
-              register
+              Enter your email below to donate
             </p>
             <div className="text-center ">
               <div style={{ width: "100%" }} className="   ">

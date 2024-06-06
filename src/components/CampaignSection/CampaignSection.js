@@ -99,7 +99,7 @@ const CampaignSection = (props) => {
                         className="btn w-100 fw-bold btn-outline-success btn-md"
                         onClick={() => setAmount(20)}
                       >
-                        20 GH
+                       GHS 20 
                       </button>
                     </div>
                     <div className="col-md-3 col-6">
@@ -107,7 +107,7 @@ const CampaignSection = (props) => {
                         className="btn w-100 fw-bold btn-outline-success btn-md"
                         onClick={() => setAmount(50)}
                       >
-                        50 GH
+                       GHS 50 
                       </button>
                     </div>
                     <div className="col-md-3 col-6">
@@ -115,7 +115,7 @@ const CampaignSection = (props) => {
                         className="btn w-100 fw-bold btn-outline-success btn-md"
                         onClick={() => setAmount(100)}
                       >
-                        100 GH
+                       GHS 100 
                       </button>
                     </div>
                     <div className="col-md-3 col-6">
@@ -123,7 +123,7 @@ const CampaignSection = (props) => {
                         className="btn w-100 fw-bold btn-outline-success btn-md"
                         onClick={() => setAmount(150)}
                       >
-                        150 GH
+                       GHS 150 
                       </button>
                     </div>
                     <div className="col-md-3 col-6">
@@ -131,7 +131,7 @@ const CampaignSection = (props) => {
                         className="btn w-100 fw-bold btn-outline-success btn-md"
                         onClick={() => setAmount(200)}
                       >
-                        200 GH
+                       GHS 200 
                       </button>
                     </div>
                     <div className="col-md-3 col-6">
@@ -139,7 +139,7 @@ const CampaignSection = (props) => {
                         className="btn w-100 fw-bold btn-outline-success btn-md"
                         onClick={() => setAmount(250)}
                       >
-                        250 GH
+                       GHS 250 
                       </button>
                     </div>
                     <div className="col-md-3 col-6">
@@ -147,7 +147,7 @@ const CampaignSection = (props) => {
                         className="btn w-100 fw-bold btn-outline-success btn-md"
                         onClick={() => setAmount(300)}
                       >
-                        300 GH
+                       GHS 300 
                       </button>
                     </div>
                     <div className="col-md-3 col-6">
@@ -155,7 +155,7 @@ const CampaignSection = (props) => {
                         className="btn w-100 fw-bold btn-outline-success btn-md"
                         onClick={() => setAmount(350)}
                       >
-                        350 GH
+                       GHS 350 
                       </button>
                     </div>
                   </div>

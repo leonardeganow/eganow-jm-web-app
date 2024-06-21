@@ -310,16 +310,16 @@ const Header = (props) => {
                   </ul>
                 </div>
               </div>
-              {/* <div className="col-lg-4  col-md-3 col-sm-4 col-2">
+              <div className="col-lg-4  col-md-3 col-sm-4 col-2">
                 <div className="header-right ">
-                  <div className="close-form">
+                  {/* <div className="close-form">
                     <MyLink to="/agentlogin" className="theme-btn">
                       <span className="text">AGENT LOGIN</span>
                       <span className="mobile">
                         <RiAdminFill size={28} />
                       </span>
                     </MyLink>
-                  </div>
+                  </div> */}
 
                   <div className="close-form ms-3">
                     <Link
@@ -334,7 +334,7 @@ const Header = (props) => {
                     </Link>
                   </div>
                 </div>
-              </div> */}
+              </div>
             </div>
           </div>
         </nav>

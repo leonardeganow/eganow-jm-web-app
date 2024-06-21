@@ -46,7 +46,7 @@ function TransactionAPI() {
   //get total transactions by member
   function getTotalDonations(data) {
     const request = new DonatedAmountRequest(); //initalize request
-
+console.log(data);
     request.setMemberid(data.memberid);
     request.setMembertype(data.role);
 

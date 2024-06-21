@@ -85,7 +85,7 @@ const MissionVission = (props) => {
   //get ggc card packages and store in zustand state
   function handleCardGet(cardtype, cardamount, cardId) {
   
-    const newRole = "GGC";
+    const newRole = "JM";
 
     const cardDisplay = `${cardtype} card - ${cardamount}`;
 

@@ -105,7 +105,7 @@ function GgcRegisterModal({ open, handleClose, handleOpen, cardTypeValues }) {
     country: "GH0233",
     userStatus: "",
     confirmPin: "",
-    role: "",
+    role: "JM",
     paymentMethod: "Debit card",
     paymentMethodId: "",
     amount: info.amount,

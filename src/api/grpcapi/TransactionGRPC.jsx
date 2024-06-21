@@ -48,7 +48,7 @@ function TransactionAPI() {
     const request = new DonatedAmountRequest(); //initalize request
 console.log(data);
     request.setMemberid(data.memberid);
-    request.setMembertype(data.role);
+    request.setMembertype("JM");
 
     return new Promise((resolve, reject) => {
       client.getTotalAmountDonated(request, METADATA, (err, resp) => {
@@ -135,7 +135,7 @@ console.log(data);
 
     request.setEnddate(data.endDate);
     request.setMemberid(data.memberid);
-    request.setMembertype(data.role);
+    request.setMembertype("JM");
     request.setStartdate(data.startDate);
 
     return new Promise((resolve, reject) => {

@@ -160,6 +160,7 @@ export default function TransactionsModal({
       startDate: start, //sending formated startDate
       endDate: end, //seending formated endDate
     };
+    
     try {
       // sending api request
       const transaction = await getTransactions(formatedData);
@@ -432,8 +433,7 @@ export default function TransactionsModal({
                     required
                     hidden
                   >
-                    <option value="GGC">Select Type</option>
-                    <option value="GGC">Good Governance</option>
+                    <option value="JM">Select Type</option>
                     <option value="JM">JM</option>
                   </select>
                   <input
@@ -524,8 +524,8 @@ export default function TransactionsModal({
                     </h2>
                   </div>
                   <div className="row ">
-                    <div className="col-md-6 text-center ">
-                      {/* card */}
+                    {/* <div className="col-md-6 text-center ">
+                    
                       <div
                         id="divId"
                         style={{
@@ -552,8 +552,6 @@ export default function TransactionsModal({
                             }`,
                             fontSize: "0.6rem",
                             fontWeight: "bold",
-
-                            // color: "darkgray",
                           }}
                         >
                           {cardName}
@@ -569,25 +567,24 @@ export default function TransactionsModal({
                                 : "black"
                             }`,
                             letterSpacing: "2px",
-                            // color: "darkgray",
                             fontWeight: "bold",
                           }}
                         >
                           {cardNo}
                         </p>
-                        {/* <img  src={arise} alt="" /> */}
-                        {/* <Skeleton
+                        <img  src={arise} alt="" />
+                        <Skeleton
                           variant="rectangular"
                           width={"100%"}
                           height={150}
                         >
                           <Avatar src="" className="w-25" />
-                        </Skeleton> */}
+                        </Skeleton>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* search form */}
-                    <div className="col-md-6 align-self-end">
+                    <div className="col-md-12 align-self-end">
                       <div>
                         <form
                           // onSubmit={handleSubmit(onSubmitTransaction)}
